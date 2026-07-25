@@ -80,7 +80,7 @@
     "id": "nomorescroll_lite",
     "title": "NoMoreScroll Lite",
     "description": "Blocks endless scrolling sites",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "tag": "Store: Verified",
     "enabled": true,
     "runtime": "page",

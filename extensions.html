@@ -91,7 +91,7 @@ function render(list) {
         let taghtml = "";
         if (ext.tag === "Store: Verified") {
             taghtml = '<p class="verified">Official</p>';
-        } else if (ext.tag === "flagged") {
+        } else if (ext.tag === "Store: Flagged") {
             taghtml = '<p class="flagged">Flagged</p>';
         }
 
@@ -133,7 +133,7 @@ function installextension(ext) {
 }
 
 function filterverified() {
-    render(extensions.filter(e => e.tag === "verified"));
+    render(extensions.filter(e => e.tag === "Store: Verified"));
 }
 
 function gotomanager() {

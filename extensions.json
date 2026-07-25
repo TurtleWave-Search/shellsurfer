@@ -41,7 +41,7 @@
     "enabled": true,
     "runtime": "start",
     "mode": "function",
-    "code": "var greetings=['Hello','Hola','Bonjour','Ciao','Hallo','Olá','Привет','こんにちは','안녕하세요','你好','مرحبا','नमस्ते','Merhaba','Γειά σου','Xin chào','Sawubona','Jambo','Salve','Hej','Cześć'];"
+    "code": "var greetings=['Hello','Hola','Bonjour','Ciao','Hallo','Olá','Привет','こんにちは','안녕하세요','你好','مرحبا','नमस्ते','Merhaba','Γειά σου','Xin chào','Sawubona','Jambo','Salve','Hej','Cześć'];alert(greetings[Math.floor(Math.random()*greetings.length)]);"
 },
 {
     "id": "resizable_toolbar",

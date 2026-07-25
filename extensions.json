@@ -85,7 +85,7 @@
     "enabled": true,
     "runtime": "page",
     "mode": "function",
-    "code": "const f=document.getElementById('favicon');if(f)f.style.display='none';"
+    "code": "const f=document.getElementById('favicon');if(f)f.style.display='none';document.querySelectorAll('.tabicon,.bookmarkicon').forEach(e=>e.style.display='none');"
   },
   {
     "id": "not_a_virus",

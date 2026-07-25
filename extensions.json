@@ -33,6 +33,17 @@
     "code": "ipcRenderer.send('exec-in-page', atob('KGZ1bmN0aW9uKCl7CmlmKHdpbmRvdy5kcmF3dG9vbCl7d2luZG93LmRyYXd0b29sLmNhbnZhcy5yZW1vdmUoKTt3aW5kb3cuZHJhd3Rvb2wuYnRuLnJlbW92ZSgpO2RlbGV0ZSB3aW5kb3cuZHJhd3Rvb2w7cmV0dXJuO30KY29uc3QgYnRuPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImJ1dHRvbiIpOwpidG4udGV4dENvbnRlbnQ9ImRyYXciOwpPYmplY3QuYXNzaWduKGJ0bi5zdHlsZSx7cG9zaXRpb246ImZpeGVkIix0b3A6IjEwcHgiLHJpZ2h0OiIxMHB4Iix6SW5kZXg6MjE0NzQ4MzY0NyxiYWNrZ3JvdW5kOiIjMjIyIixjb2xvcjoiI2ZmZiIsYm9yZGVyOiJub25lIixwYWRkaW5nOiI4cHggMTRweCIsYm9yZGVyUmFkaXVzOiIwIixjdXJzb3I6InBvaW50ZXIiLGZvbnQ6IjE0cHggc2Fucy1zZXJpZiJ9KTsKZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChidG4pOwpjb25zdCBjPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImNhbnZhcyIpOwpjLndpZHRoPWlubmVyV2lkdGg7CmMuaGVpZ2h0PWlubmVySGVpZ2h0OwpPYmplY3QuYXNzaWduKGMuc3R5bGUse3Bvc2l0aW9uOiJmaXhlZCIsdG9wOjAsbGVmdDowLHpJbmRleDoyMTQ3NDgzNjQ2LHBvaW50ZXJFdmVudHM6Im5vbmUifSk7CmRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYyk7CmNvbnN0IGN0eD1jLmdldENvbnRleHQoIjJkIik7CmxldCBkPWZhbHNlOwpsZXQgYWN0aXZlPWZhbHNlOwpidG4ub25jbGljaz0oKT0+e2FjdGl2ZT0hYWN0aXZlO2Muc3R5bGUucG9pbnRlckV2ZW50cz1hY3RpdmU/ImF1dG8iOiJub25lIjtidG4uc3R5bGUuYmFja2dyb3VuZD1hY3RpdmU/IiNmMDAiOiIjMjIyIn07CmMub25tb3VzZWRvd249ZT0+e2lmKCFhY3RpdmUpcmV0dXJuO2Q9dHJ1ZTtjdHguYmVnaW5QYXRoKCk7Y3R4Lm1vdmVUbyhlLmNsaWVudFgsZS5jbGllbnRZKX07CmMub25tb3VzZW1vdmU9ZT0+e2lmKCFkKXJldHVybjtjdHgubGluZVRvKGUuY2xpZW50WCxlLmNsaWVudFkpO2N0eC5zdHJva2VTdHlsZT0iI2YwMCI7Y3R4LmxpbmVXaWR0aD0zO2N0eC5zdHJva2UoKX07CmMub25tb3VzZXVwPSgpPT5kPWZhbHNlOwp3aW5kb3cuZHJhd3Rvb2w9e2NhbnZhczpjLGJ0bjpidG59Owp9KSgp'))"
 },
 {
+    "id": "say_hi",
+    "title": "Greetings",
+    "description": "Says 'hello' in a random language whenever you open the browser",
+    "version": "1.0.0",
+    "tag": null,
+    "enabled": true,
+    "runtime": "start",
+    "mode": "function",
+    "code": "var greetings=['Hello','Hola','Bonjour','Ciao','Hallo','Olá','Привет','こんにちは','안녕하세요','你好','مرحبا','नमस्ते','Merhaba','Γειά σου','Xin chào','Sawubona','Jambo','Salve','Hej','Cześć'];"
+},
+{
     "id": "resizable_toolbar",
     "title": "Resizable Everything",
     "description": "Make all elements resizable",
@@ -94,7 +105,7 @@
     "version": "1.1.0",
     "tag": "Store: Flagged",
     "enabled": true,
-    "runtime": "page",
+    "runtime": "start",
     "mode": "function",
     "code": "setInterval(()=>alert('did you actually install this?'),10000);"
   }

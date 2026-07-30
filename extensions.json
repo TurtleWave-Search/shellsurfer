@@ -22,6 +22,17 @@
     "code": "document.getElementById('settingsbutton').textContent='S';document.getElementById('bookmarks').textContent='B';"
   },
 {
+  "id": "custom_theme_showcase",
+  "title": "Custom Theme Base (Developers)",
+  "description": "This extension is for developers. Modify this extension to create your own Shell Surfer themes. To view default Shell Surfer CSS, go to ssurf://customstyles/ssurf.css",
+  "version": "1.0.0",
+  "tag": "Store: Verified",
+  "enabled": true,
+  "runtime": "start",
+  "mode": "function",
+  "code": "const css = \"\"; const oldone = document.getElementById(\"uistylesheet\"); const style = document.createElement(\"style\"); style.id = \"uistylesheet\"; style.textContent = css; oldone.replaceWith(style);"
+},
+{
     "id": "everywhere_canvas",
     "title": "Everywhere is your Canvas",
     "description": "Draw on any webpage with toggle (may not work on some versions)",

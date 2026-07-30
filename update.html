@@ -50,26 +50,27 @@
   <script>
     // manual stuff start :(
     const latestbeta = "1.9BETA";
-    const latestversion = "1.8.2R";
+    const latestversion = "1.9R";
     // manual stuff end :)
      const betaIsNewerThanRelease = (Number(latestbeta.replace("BETA", "")) >  Number(latestversion.replace("R", "")));
     let checked = false;
   function check() {
+        document.getElementById("status").textContent = "Your browser is outdated. As of 1.9R, this page is DEPRECATED and is only used for older Shell Surfer versions. ";
     if (checked === false) {
       let input = document.getElementById("versioninput").value.trim().toLowerCase();
      if (input === latestversion.toLowerCase()) {
-      document.getElementById("status").textContent = "Your browser has the newest release!";
+      // document.getElementById("status").textContent = "Your browser has the newest release!";
     } else if (input === latestbeta.toLowerCase() && betaIsNewerThanRelease) {
-        document.getElementById("status").textContent = "Your browser is up to date! (Debug info: You are on the BETA version of an unfinished release)";
+        // document.getElementById("status").textContent = "Your browser is up to date! (Debug info: You are on the BETA version of an unfinished release)";
     } else {
       checked = true;
-      document.getElementById("status").textContent = "Your browser needs an update";
-       document.getElementById("checkbutton").textContent = "Install Update";
-      document.getElementById("versioninput").style.display = "none";
+    //  document.getElementById("status").textContent = "Your browser needs an update";
+    //   document.getElementById("checkbutton").textContent = "Install Update";
+    //  document.getElementById("versioninput").style.display = "none";
     }
     } else {
-       document.getElementById("status").textContent = "Scroll down on the new window to update";
-    window.open("/index.html?updatemode=y");
+    //   document.getElementById("status").textContent = "Scroll down on the new window to update";
+   // window.open("/index.html?updatemode=y");
     }
    }
   </script>

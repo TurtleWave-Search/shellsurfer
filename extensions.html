@@ -75,8 +75,14 @@ button:hover {
 let extensions = [];
 
 async function loadextensions() {
-    const res = await fetch('https://cdn.jsdelivr.net/gh/bayturtleking/shellsurfer@refs/heads/main/extensions.json');
-    extensions = await res.json();
+    try {
+        const res = await fetch('https://raw.githubusercontent.com/bayturtleking/shellsurfer/main/extensions.json');
+        if (!res.ok) throw new Error();
+        extensions = await res.json();
+    } catch (err) {
+        const res = await fetch('https://cdn.jsdelivr.net/gh/bayturtleking/shellsurfer@refs/heads/main/extensions.json');
+        extensions = await res.json();
+    }
     render(extensions);
 }
 
